@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+.book-tour-button {
+    background-color: #ffd700;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-tour-button:hover {
+    background-color: #ffc107;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding-top: 80px; /* To prevent the hero content from overlapping with the navbar */
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    text-align: center;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+h1 span {
+    color: #ffd700; /* Golden color for 'Bharat' */
+}
+
+.explore-button {
+    background-color: #ffd700;
+    color: #000;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #ffc107;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .book-tour-button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+/* Import Lora font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+/* Import Lora font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+/* Explore India Section Styles */
+.explore-india-section {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://media.istockphoto.com/id/521428868/photo/varanasi_puja_2.jpg?s=612x612&w=0&k=20&c=E-hb-utTXQGQCXeqeuvww3kRl8zEHsZHPNC6Xb8KdKs='); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore-india-content {
+    color: #fff;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background for text */
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 800px;
+}
+
+.explore-india-content h1 {
+    font-family: 'Lora', serif;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.explore-india-content p {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    .explore-india-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .explore-india-content p {
+        font-size: 1rem;
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  .offer-section {
+    font-family: 'Playfair Display', serif;
+    font-size: larger;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .offer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .offer-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+    max-width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .offer-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .offer-item img {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .offer-item h3 {
+    margin: 15px 0 10px;
+    font-size: 1.2rem;
+  }
+  
+  .offer-item p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }  
+
+  
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.section {
+    padding: 50px;
+    text-align: center;
+}
+.section h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content {
+    padding: 20px;
+    text-align: left;
+}
+.card-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+.card-content p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+.card-content .read-more {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+.card-content .read-more:hover {
+    background-color: #555;
+}
